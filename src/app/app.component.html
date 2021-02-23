@@ -1,6 +1,13 @@
 <input type="text" [(ngModel)]='title'>
 {{title}}
 
+<app-product>
+    <div *ngFor="let product of products; index as i">
+        {{product.title}}
+        <img [src]=product.image alt="">
+        {{product.price}}
+    </div>
+</app-product>
 <div [ngSwitch]="title">
     <p *ngSwitchCase="'Nicolas'">Este es Nicolas</p>
     <p *ngSwitchCase="'Juan'">Este es Juan</p>
@@ -12,8 +19,3 @@
     {{user}}  {{i}}
     <button (click)="removeItem(i)">Delete</button>
 </li>
-<div *ngFor="let product of products; index as i">
-    {{product.title}}
-    <img [src]=product.image alt="">
-    {{product.price}}
-</div>
