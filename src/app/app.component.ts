@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Product} from './product.model'
+import {Product} from './product.model';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,7 +8,8 @@ import {Product} from './product.model'
 export class AppComponent {
   title = 'Store - app angular';
   items = ['nicolas', 'julian', 'andres'];
-  products: Product[] =[    {
+  power = 10;
+  products: Product[] = [    {
     id: '1',
     image: 'assets/images/camiseta.png',
     title: 'Camiseta',
@@ -52,12 +53,12 @@ export class AppComponent {
   }];
   addItem = () => {
     this.items.push('new item');
-  };
+  }
   removeItem(index: number) {
     this.items.splice(index, 1);
-  };
-  clickProduct(id:number) {
+  }
+  clickProduct(id: number) {
     // this.items.push(id);
-    console.log('s')
+    console.log('s');
   }
 }

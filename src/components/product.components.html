@@ -1,5 +1,12 @@
 
-<h3> {{product.title}}</h3>
-<img [src]=product.image alt="">
-<strong>{{product.price}}</strong> 
-<button (click)="addCart()">Add Card</button>
+<h3 class="font-product-title"> {{product.title | uppercase}}</h3>
+<figure class='image'>
+    <img  [src]=product.image alt="product select">
+</figure>
+<div class='container-add-product'>
+    <button class="button-click-cart" (click)="addCart()">Add Card</button>
+    <strong> {{product.price | currency}}</strong> 
+    <p>Description: {{product.description | slice:0:10}}</p>
+    <p> {{today | date: 'hh: mm: a'}}</p>
+</div>
+

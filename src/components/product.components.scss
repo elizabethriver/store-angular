@@ -7,11 +7,13 @@
     margin: 11px;
     --primary-color: #333;
     justify-content: center;
-    --font-size: 100%;
+    --font-size: 150%;
+    background-color: blueviolet;
   }
  
   img{
       max-width: 100%;
+      margin: 1em;
   }
 
   h3{
@@ -24,9 +26,10 @@
   }
 
   button{
-      border-radius: 10px;
-      background-color: aquamarine;
-      color: var(--primary-color);
+    border-radius: 9px;
+    background-color: aquamarine;
+    color: var(--primary-color);
+    margin: 1em;
   }
 
 .container-title{
@@ -35,7 +38,25 @@
 .title{
     text-align: center;
 }
+.image{
+    margin: 2em;
+}
+
 .container-strong-button{
     display: inline;
     justify-items: center;
+}
+.font-product-title{
+    text-align: center;
+}
+.button-click-cart{
+    width: max-content;
+}
+.container-add-product{
+    display: grid;
+    justify-items: center;
+    background-color: #fff;
+    border-radius: 0 0 9px 9px;
+    margin-bottom: 0;
+  
 }

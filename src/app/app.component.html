@@ -1,7 +1,9 @@
 <input type="text" [(ngModel)]='title'>
 {{title}}
-<div *ngFor="let product of products">
-<app-product (onAddCart)="clickProduct($event)" [product]='product'></app-product>
+<input type="text" [(ngModel)]='power'>
+{{power | exponencial}}
+<div class="product-grid">
+<app-product *ngFor="let product of products" (addedCart)="clickProduct($event)" [product]='product'></app-product>
 </div>
 
 <div [ngSwitch]="title">
