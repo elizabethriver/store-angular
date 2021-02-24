@@ -1,13 +1,9 @@
 <input type="text" [(ngModel)]='title'>
 {{title}}
+<div *ngFor="let product of products">
+<app-product (onAddCart)="clickProduct($event)" [product]='product'></app-product>
+</div>
 
-<app-product>
-    <div *ngFor="let product of products; index as i">
-        {{product.title}}
-        <img [src]=product.image alt="">
-        {{product.price}}
-    </div>
-</app-product>
 <div [ngSwitch]="title">
     <p *ngSwitchCase="'Nicolas'">Este es Nicolas</p>
     <p *ngSwitchCase="'Juan'">Este es Juan</p>
@@ -19,3 +15,4 @@
     {{user}}  {{i}}
     <button (click)="removeItem(i)">Delete</button>
 </li>
+<!-- <app-item-output ></app-item-output> -->

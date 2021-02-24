@@ -55,5 +55,9 @@ export class AppComponent {
   };
   removeItem(index: number) {
     this.items.splice(index, 1);
+  };
+  clickProduct(id:number) {
+    // this.items.push(id);
+    console.log('s')
   }
 }

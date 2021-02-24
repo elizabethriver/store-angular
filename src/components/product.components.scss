@@ -1,0 +1,41 @@
+
+
+:host {
+    border: 1px solid #333;
+    border-radius: 10px;
+    display: inline-grid;
+    margin: 11px;
+    --primary-color: #333;
+    justify-content: center;
+    --font-size: 100%;
+  }
+ 
+  img{
+      max-width: 100%;
+  }
+
+  h3{
+      font-size: var(--font-size);
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  strong{
+      color:var(--primary-color);
+  }
+
+  button{
+      border-radius: 10px;
+      background-color: aquamarine;
+      color: var(--primary-color);
+  }
+
+.container-title{
+ background-color: aqua;
+  }
+.title{
+    text-align: center;
+}
+.container-strong-button{
+    display: inline;
+    justify-items: center;
+}
