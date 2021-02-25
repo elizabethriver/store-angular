@@ -5,17 +5,31 @@ import { AppComponent } from './app.component';
 import { ProductComponent } from '../components/product.components';
 import { ExponencialPipe } from './exponencial.pipe';
 import { HighlightDirective } from './highlight.directive';
+import { CardComponent } from './card/card.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
+import { ProductsComponent } from './products/products.component';
+import { ContactComponent } from './contact/contact.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DemoComponent } from './demo/demo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
+    CardComponent,
     ExponencialPipe,
-    HighlightDirective
+    HighlightDirective,
+    HomeComponent,
+    ProductsComponent,
+    ContactComponent,
+    PageNotFoundComponent,
+    DemoComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
