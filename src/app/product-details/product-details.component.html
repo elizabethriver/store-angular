@@ -1,1 +1,12 @@
 <p>product-details works!</p>
+<div>
+<img [src]="product.image" alt="">
+</div>
+<div>
+<ul>
+    <li>Name: {{product.title | uppercase}} </li>
+    <li>Price: {{product.price | currency}}</li>
+   
+</ul>
+<p> {{product.description}}</p>
+</div>

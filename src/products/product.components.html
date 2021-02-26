@@ -9,4 +9,5 @@
     <p>Description: {{product.description | slice:0:10}}</p>
     <p> {{today | date: 'hh: mm: a'}}</p>
 </div>
+<a [routerLink]="['/products', product.id]">See details</a>
 

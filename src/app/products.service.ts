@@ -5,7 +5,7 @@ import {Product} from './product.model';
   providedIn: 'root'
 })
 export class ProductsService {
-  products: Product[] = [    
+  products: Product[] = [
     {
       id: '1',
       image: 'assets/images/camiseta.png',
