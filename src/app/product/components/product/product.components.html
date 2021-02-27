@@ -4,7 +4,7 @@
     <img  [src]=product.image alt="product select">
 </figure>
 <div class='container-add-product'>
-    <button class="button-click-cart" (click)="addCart()">Add Card</button>
+    <button (click)="addCart()" mat-raised-button color="primary">Add Card</button>
     <strong> {{product.price | currency}}</strong> 
     <p>Description: {{product.description | slice:0:10}}</p>
     <p> {{today | date: 'hh: mm: a'}}</p>
