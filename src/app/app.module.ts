@@ -9,7 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ProductsComponent } from './product/components/products/products.component';
 
 
-import { DemoComponent } from './demo/demo.component';
+// import { DemoComponent } from './demo/demo.component';
 
 import { ProductDetailsComponent } from './product/components/product-details/product-details.component';
 import { LayoutComponent } from './layout/layout.component';
@@ -20,7 +20,7 @@ import { CoreModule } from './core/core.module';
   declarations: [
     AppComponent,
     CardComponent,
-    DemoComponent,
+    // DemoComponent,
     LayoutComponent
     // ProductComponent,
     // ProductsComponent,
