@@ -1,8 +1,18 @@
 nav > li {
-    background-color: aquamarine;
     padding: 5px;
     text-decoration: none;
 }
 li > a.active {
     background-color: blue;
+}
+li{
+    display: inline;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.header-row{
+    width: 100%;
 }

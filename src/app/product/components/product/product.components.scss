@@ -1,63 +1,74 @@
 
 
-:host {
-    border: 1px solid #333;
-    border-radius: 10px;
-    display: inline-grid;
-    margin: 11px;
-    --primary-color: #333;
-    justify-content: center;
-    --font-size: 150%;
-    background-color: blueviolet;
-  }
+// :host {
+//     border: 1px solid #333;
+//     border-radius: 10px;
+//     display: inline-grid;
+//     margin: 11px;
+//     --primary-color: #333;
+//     justify-content: center;
+//     --font-size: 150%;
+//     background-color: blueviolet;
+//   }
  
-  img{
-      max-width: 100%;
-      margin: 1em;
+  // img{
+  //     max-width: 100%;
+  //   //   margin: 1em;
+  // }
+  .crop-image{
+    display: block;
+    height: 300px;
+    width: 100%;
+    img {
+      object-fit: contain;
+      height: 100%;
+      width: 100%;
+      object-position: center;
+    }
   }
 
-  h3{
-      font-size: var(--font-size);
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
+//   h3{
+//       font-size: var(--font-size);
+//       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+//   }
 
-  strong{
-      color:var(--primary-color);
-  }
+//   strong{
+//       color:var(--primary-color);
+//   }
 
-  button{
-    // border-radius: 9px;
-    // background-color: aquamarine;
-    // color: var(--primary-color);
-    margin: 1em;
-  }
+//   button{
+//     // border-radius: 9px;
+//     // background-color: aquamarine;
+//     // color: var(--primary-color);
+//     margin: 1em;
+//   }
 
-.container-title{
-//  background-color: aqua;
-margin: 1em;
-  }
-.title{
-    text-align: center;
-}
-.image{
-    margin: 2em;
-}
+// .container-title{
+// //  background-color: aqua;
+// margin: 1em;
+//   }
+// .title{
+//     text-align: center;
+// }
+// .image{
+//     margin: 2em;
+// }
 
-.container-strong-button{
-    display: inline;
-    justify-items: center;
-}
-.font-product-title{
-    text-align: center;
-}
-.button-click-cart{
-    width: max-content;
-}
-.container-add-product{
-    display: grid;
-    justify-items: center;
-    background-color: #fff;
-    border-radius: 0 0 9px 9px;
-    margin-bottom: 0;
+// .container-strong-button{
+//     display: inline;
+//     justify-items: center;
+// }
+// .font-product-title{
+//     text-align: center;
+// }
+// .button-click-cart{
+//     width: max-content;
+// }
+// .container-add-product{
+//     display: grid;
+//     justify-items: center;
+//     background-color: #fff;
+//     border-radius: 0 0 9px 9px;
+//     margin-bottom: 0;
   
-}
+// }

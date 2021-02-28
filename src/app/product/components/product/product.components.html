@@ -1,13 +1,41 @@
+<mat-card class="example-card">
+    <mat-card-header>
+      <div appHighlight class="font-product-title" mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{product.title | uppercase}}</mat-card-title>
+      <mat-card-subtitle>{{product.price | currency}}</mat-card-subtitle>
+    </mat-card-header>
+    <figure class='crop-image'>
+        <img  mat-card-image [src]=product.image alt="product select">
+    </figure>
+    <mat-card-content>
+        <p>{{product.description | slice:0:10}}</p>
+        <p> {{today | date: 'hh: mm: a'}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button (click)="addCart()" mat-raised-button color="primary">
+            <span class="material-icons">
+            add_shopping_cart
+            </span>
+        </button>
+        <a mat-raised-button [routerLink]="['/products', product.id]">
+            <mat-icon aria-hidden="false" aria-label="Example home icon">visibility</mat-icon>
+        </a>
+    </mat-card-actions>
+  </mat-card>
 
-<h3 appHighlight class="font-product-title"> {{product.title | uppercase}}</h3>
+<!-- <h3 appHighlight class="font-product-title"> {{product.title | uppercase}}</h3>
 <figure class='image'>
     <img  [src]=product.image alt="product select">
 </figure>
 <div class='container-add-product'>
-    <button (click)="addCart()" mat-raised-button color="primary">Add Card</button>
+    <button (click)="addCart()" mat-raised-button color="primary">
+        <span class="material-icons">
+        add_shopping_cart
+        </span>
+    </button>
     <strong> {{product.price | currency}}</strong> 
     <p>Description: {{product.description | slice:0:10}}</p>
     <p> {{today | date: 'hh: mm: a'}}</p>
 </div>
-<a [routerLink]="['/products', product.id]">See details</a>
+<a [routerLink]="['/products', product.id]">See details</a> -->
 
