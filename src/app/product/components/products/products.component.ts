@@ -7,7 +7,7 @@ import { ProductsService } from '../../../core/services/products/products.servic
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit {
-  products: Product[];
+  products: Product[] = [];
 
   clickProduct(id: number) {
     // this.items.push(id);
@@ -16,9 +16,11 @@ export class ProductsComponent implements OnInit {
   constructor(private  productsService: ProductsService) { }
 
   ngOnInit() {
-
-      this.products = this.productsService.getAllProduct();
-
+    this.fetchProduct();
+  }
+  fetchProduct(){
+    this.productsService.getAllProduct()
+    .subscribe(products => this.products = products);
   }
 
 }
