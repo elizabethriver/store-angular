@@ -30,4 +30,7 @@ export class ProductComponent implements OnInit, DoCheck, OnDestroy  {
      console.log('added');
      this.addedCart.emit(this.product.id);
  }
+//  this.heroesService
+//   .addHero(newHero)
+//   .subscribe(hero => this.heroes.push(hero));
 }
