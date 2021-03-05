@@ -18,24 +18,16 @@ export class ProductListComponent implements OnInit {
   fetchProducts(){
     this.productsService.getAllProduct()
     .subscribe(products => {this.products = products; });
+    // .subscribe(products => {this.products = products; });
   }
-  // updateProduct(){
-  //   const updateProduct: Partial<Product> = {
-  //     id: '12',
-  //     title: 'new since angular',
-  //     image: 'assets/images/banner-1.jpg',
-  //     price: 4000,
-  //     description: 'new edition'
-  //   };
-  //   this.productsService.updateProduct('2', updateProduct)
-  //   .subscribe(data => this.product = data.id);
-  // }
   deleteProduct(id: string) {
     this.productsService.deleteProduct(id)
     .subscribe(rta => {
-      // this.fetchProduct();
-      console.log(rta);
-      this.fetchProducts();
+      if (rta){
+        const index = this.products.findIndex((product) => product.id === id);
+        this.products.splice(index, 1);
+        this.products = [...this.products];
+      }
     });
   }
 }

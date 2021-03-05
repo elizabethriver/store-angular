@@ -78,10 +78,13 @@
                             <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
                         </div>
                         <div class="subscribe-form">
-                            <form action="#">
-                                <input type="text" placeholder="Email Address">
-                                <button><i class="fab fa-telegram-plane"></i></button>
-                            </form>
+                            <mat-form-field class="example-form-field">
+                            <mat-label>Contact</mat-label>
+                            <input matInput type="email" [formControl]="emailSent" placeholder="Email Address" required>
+
+                            </mat-form-field>
+                            <button mat-button [disabled]='emailSent.invalid' (click)="setNameValue()">Send 
+                            </button>
                         </div>
                     </div>
                 </div>

@@ -7,13 +7,13 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from '../material/material.module';
-
+import { ReactiveFormsModule } from '@angular/forms';
 // import { CustomerComponent } from './customer.component';
 // import { NewItemDirective } from './new-item.directive';
 // import { OrdersPipe } from './orders.pipe';
 
 @NgModule({
- imports:      [ CommonModule, RouterModule, MaterialModule],
+ imports:      [ CommonModule, RouterModule, MaterialModule, ReactiveFormsModule],
  declarations: [ HeaderComponent, FooterComponent , HighlightDirective, ExponencialPipe ],
  exports:      [ HeaderComponent, FooterComponent, HighlightDirective, ExponencialPipe,
                  CommonModule, FormsModule ]
