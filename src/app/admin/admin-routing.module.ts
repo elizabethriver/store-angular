@@ -7,6 +7,7 @@ import { TableComponent } from './components/table/table.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { FormProductComponent } from './components/form-product/form-product.component';
 import { LoginComponent } from './components/login/login.component';
+import { SignupComponent } from './components/signup/signup.component';
 
 const routes: Routes = [
 
@@ -37,7 +38,11 @@ const routes: Routes = [
       {
         path: 'login',
         component: LoginComponent,
-      }
+      },
+      {
+        path: 'signup',
+        component: SignupComponent,
+      },
     ]
   }
 ];
