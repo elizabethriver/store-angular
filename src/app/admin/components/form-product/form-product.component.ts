@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ProductsService } from '../../../core/services/products/products.service';
 import { Router } from '@angular/router';
-import { MyValidators } from "../../../utils/validators";
+import { MyValidators } from '../../../utils/validators';
 
 @Component({
   selector: 'app-form-product',
@@ -38,6 +38,9 @@ saveProduct(event: Event){
       console.log(newProduct);
     });
   }
+}
+get priceField(){
+  return this.form.get('price');
 }
   ngOnInit(): void {
   }

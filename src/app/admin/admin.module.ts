@@ -9,9 +9,11 @@ import { TableComponent } from './components/table/table.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { FormProductComponent } from './components/form-product/form-product.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
-  declarations: [ProductFormComponent, NavComponent, TableComponent, DashboardComponent, ProductListComponent, FormProductComponent],
+  // tslint:disable-next-line: max-line-length
+  declarations: [ProductFormComponent, NavComponent, TableComponent, DashboardComponent, ProductListComponent, FormProductComponent, LoginComponent],
   imports: [
     CommonModule,
     AdminRoutingModule,

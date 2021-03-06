@@ -7,48 +7,46 @@
         </mat-card-title>
     </mat-card-header>
     <mat-card-content>
-
-            <div class="row">
-                <div class="col-xs">
-                   <mat-form-field  appearance="fill">
-                    <mat-label>Id</mat-label>
-                    <input placeholder="Id" formControlName="id" matInput type="text">
-                </mat-form-field>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs">
-                    <mat-form-field appearance="fill">
-                        <mat-label>Title</mat-label>
-                        <input placeholder="Title" formControlName="title" matInput type="text">
-                    </mat-form-field>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs">
-                    <mat-form-field appearance="fill">
-                        <mat-label>Price</mat-label>
-                        <input placeholder="Price" formControlName="price" matInput type="number">
-                    </mat-form-field>
-                    <div *ngIf="form.get('price').errors && form.get('price').dirty ">
-                        <mat-error *ngIf="form.get('price').hasError('price_invalid')">Error</mat-error>
-                        <mat-error *ngIf="form.get('price').hasError('required')">Empty field</mat-error>
-                    </div>                   
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs">
-                    <img src="" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs">
-                    <mat-form-field appearance="fill">
-                        <textarea placeholder="Description" formControlName="description" matInput type="text"></textarea>
-                    </mat-form-field>
-                </div>
-            </div>           
-       
+    <div class="row">
+        <div class="col-xs">
+            <mat-form-field  appearance="fill">
+            <mat-label>Id</mat-label>
+            <input placeholder="Id" formControlName="id" matInput type="text">
+        </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs">
+            <mat-form-field appearance="fill">
+                <mat-label>Title</mat-label>
+                <input placeholder="Title" formControlName="title" matInput type="text">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs">
+            <mat-form-field appearance="fill">
+                <mat-label>Price</mat-label>
+                <input placeholder="Price" formControlName="price" matInput type="number">
+            </mat-form-field>
+            <div *ngIf="priceField.errors && priceField.dirty ">
+                <mat-error *ngIf="priceField.hasError('price_invalid')">Error</mat-error>
+                <mat-error *ngIf="priceField.hasError('required')">Empty field</mat-error>
+            </div>                   
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs">
+            <img src="" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs">
+            <mat-form-field appearance="fill">
+                <textarea placeholder="Description" formControlName="description" matInput type="text"></textarea>
+            </mat-form-field>
+        </div>
+    </div>           
     </mat-card-content>
     <mat-card-actions>
         <button [disabled]='form.invalid' mat-raised-button color="primary" type="submit">Save</button>
