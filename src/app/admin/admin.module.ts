@@ -11,10 +11,11 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { FormProductComponent } from './components/form-product/form-product.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { ProductEditComponent } from './components/product-edit/product-edit.component';
 
 @NgModule({
   // tslint:disable-next-line: max-line-length
-  declarations: [ProductFormComponent, NavComponent, TableComponent, DashboardComponent, ProductListComponent, FormProductComponent, LoginComponent, SignupComponent],
+  declarations: [ProductFormComponent, NavComponent, TableComponent, DashboardComponent, ProductListComponent, FormProductComponent, LoginComponent, SignupComponent, ProductEditComponent],
   imports: [
     CommonModule,
     AdminRoutingModule,

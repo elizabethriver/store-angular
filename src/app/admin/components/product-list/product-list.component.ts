@@ -17,11 +17,13 @@ export class ProductListComponent implements OnInit {
   }
   fetchProducts(){
     this.productsService.getAllProduct()
+    // tslint:disable-next-line: deprecation
     .subscribe(products => {this.products = products; });
     // .subscribe(products => {this.products = products; });
   }
   deleteProduct(id: string) {
     this.productsService.deleteProduct(id)
+    // tslint:disable-next-line: deprecation
     .subscribe(rta => {
       if (rta){
         const index = this.products.findIndex((product) => product.id === id);

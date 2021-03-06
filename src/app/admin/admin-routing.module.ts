@@ -8,6 +8,7 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { FormProductComponent } from './components/form-product/form-product.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { ProductEditComponent } from './components/product-edit/product-edit.component';
 
 const routes: Routes = [
 
@@ -43,6 +44,10 @@ const routes: Routes = [
         path: 'signup',
         component: SignupComponent,
       },
+      {
+        path: 'products/edit/:id',
+        component: ProductEditComponent,
+      }
     ]
   }
 ];
