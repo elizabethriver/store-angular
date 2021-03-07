@@ -1,1 +1,65 @@
-<p>order works!</p>
+<button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
+  {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
+</button>
+<mat-horizontal-stepper [linear]="isLinear" #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+      <ng-template matStepLabel>Product</ng-template>
+        <ul *ngIf="( product$ | async ) as products">
+          <p *ngIf="products.length === 0">Empty cart</p>
+          <div  class="row" *ngFor="let product of products">
+              <div class="col-xs-12
+                          col-sm-2
+                          col-md-2
+                          ">
+                  <div class="box">
+                    <img [src]="product.image" class="image" alt="product">
+                  </div>
+              </div>
+              <div class="col-xs-12
+              col-sm-2
+              col-md-2
+              ">
+                <div class="box">
+                  {{ product.title }}
+                </div>
+              </div>
+              <div class="col-xs-12
+                col-sm-2
+                col-md-2
+                ">
+                <div class="box">
+                  {{ product.price }}
+                </div>
+              </div>
+              <div class="col-xs-12
+              col-sm-2
+              col-md-2
+              ">
+              <div class="box">
+                <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
+                  <mat-icon>plus_one</mat-icon>
+                </button>
+              </div>             
+            </div>
+          </div>
+        </ul>
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup" label="Pay">
+        <mat-label>Enter payment</mat-label>
+    <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+    </div>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    <p>You are now done.</p>
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button>Reset</button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>
