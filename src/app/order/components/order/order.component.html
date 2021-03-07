@@ -4,7 +4,7 @@
 <mat-horizontal-stepper [linear]="isLinear" #stepper>
   <mat-step [stepControl]="firstFormGroup">
       <ng-template matStepLabel>Product</ng-template>
-        <ul *ngIf="( product$ | async ) as products">
+        <ul *ngIf="(product$ | async | cart:'id') as products">
           <p *ngIf="products.length === 0">Empty cart</p>
           <div  class="row" *ngFor="let product of products">
               <div class="col-xs-12
@@ -31,16 +31,11 @@
                   {{ product.price }}
                 </div>
               </div>
-              <div class="col-xs-12
-              col-sm-2
-              col-md-2
-              ">
-              <div class="box">
-                <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
-                  <mat-icon>plus_one</mat-icon>
-                </button>
-              </div>             
-            </div>
+              <div class="col-xs-12 col-sm-5 col-md-4">
+                <div class="box">
+              {{ product.count }}
+                </div>
+              </div>
           </div>
         </ul>
       <div>
