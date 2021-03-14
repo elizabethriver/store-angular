@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
-
+import { Router } from '@angular/router';
+import { AuthService } from '../../../core/services/auth/auth.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -9,7 +10,10 @@ import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms'
 export class LoginComponent implements OnInit {
   form: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(
+    private fb: FormBuilder,
+    private authService: AuthService,
+    private router: Router ) {
     this.sigIn();
   }
 
@@ -26,6 +30,12 @@ export class LoginComponent implements OnInit {
     if (this.form.valid) {
       const user = this.form.value;
       console.log(user);
+
+      this.authService.login(user.email, user.password)
+      .then(() => {
+        this.router.navigate(['/admin']);
+      })
+      .catch(() => alert('Email o password not valid'));
       // this.productsService.createProduct(product).subscribe((newProduct) => {
       //   this.router.navigate(['/admin/products']);
       //   console.log(newProduct);
