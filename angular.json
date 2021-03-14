@@ -93,7 +93,6 @@
                 }
               ]
             }
-
           }
         },
         "serve": {
@@ -108,7 +107,6 @@
             "staging": {
               "browserTarget": "store-angular:build:staging"
             }
-            
           }
         },
         "extract-i18n": {
@@ -159,6 +157,10 @@
               "devServerTarget": "store-angular:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }

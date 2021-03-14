@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "test-5eb52": {
+      "hosting": {
+        "store-angular": [
+          "test-5eb52"
+        ]
+      }
+    }
+  }
+}
