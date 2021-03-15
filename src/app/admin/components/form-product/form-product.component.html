@@ -37,7 +37,8 @@
     </div>
     <div class="row">
         <div class="col-xs">
-            <img src="" alt="">
+            <img *ngIf="(imageUrl$ | async) as image" [src]="image" alt="product" />
+            <input type="file" (change)="uploadfile($event)">
         </div>
     </div>
     <div class="row">
