@@ -5,10 +5,11 @@
     margin-top: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
     gap: 37px 42px;// nos hará breakpoints cada 300px;
+    margin-bottom: 1rem;
 }
 html, body { height: 100%; }
 body { margin: 0; 
-    background-color: #95bddc;
+    background-color: #b6d2dd;
 }
 .container{
     width: 90%;
@@ -16,5 +17,5 @@ body { margin: 0;
     padding-left: 0px;
     margin-right: auto;
     margin-left: auto;
-    background-color: #95bddc;
+    background-color: #b6d2dd;
 }
