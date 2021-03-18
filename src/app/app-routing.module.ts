@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, PreloadAllModules  } from '@angular/router';
-import { CardComponent } from './card/card.component';
+// import { CardComponent } from './card/card.component';
 import { LayoutComponent } from './layout/layout.component';
 import { AdminGuard } from './admin.guard';
 // import { AngularFireAuthGuard } from '@angular/fire/auth-guard';
@@ -23,7 +23,7 @@ const routes: Routes = [
 
   ]},
 
-  { path: 'card', component: CardComponent },
+  // { path: 'card', component: CardComponent },
   { path: 'admin',  canActivate: [AdminGuard], loadChildren: () => import('./admin/admin.module').then((m) => m.AdminModule ) },
   { path: 'auth',  loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule ) },
   { path: '**', loadChildren: () => import('./page-not-found/page-not-found.module').then((m) => m.PageNotFoundModule ) },
