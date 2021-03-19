@@ -3,7 +3,19 @@
   }
 
   .image{
-    background-color: cornflowerblue;
+    background-color: rgb(107, 122, 151);
     width: 100%;
   }
+
+  mat-horizontal-stepper{
+    margin: 1rem;
+  }
+
+  button{
+    background-color: #259086;
+    margin: 1rem;
+    color: #fff
+  }
+
+
   
