@@ -11,6 +11,7 @@ export class FooterComponent implements OnInit {
     this.emailSent = new FormControl('', [
       Validators.required,
       Validators.email]);
+    // tslint:disable-next-line: deprecation
     this.emailSent.valueChanges.subscribe(value => console.log(value));
    }
   setNameValue() {
