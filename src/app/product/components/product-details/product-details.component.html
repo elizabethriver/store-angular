@@ -1,17 +1,15 @@
 <div *ngIf="product">
-    <p>product-details works!</p>
-    <div>
-    <img [src]="product.image" alt="">
+    <mat-card class="mat-card" >
+    <div class="mat-card-1" >
+        <img [src]="product.image" alt="product of list"/>
     </div>
-    <div>
-    <ul>
-        <li>Name: {{product.title | uppercase}} </li>
-        <li>Price: {{product.price | currency}}</li>
-    
-    </ul>
-    <p> {{product.description}}</p>
+    <div class="mat-card-1">
+        <h1><strong>Name:</strong> {{product.title | uppercase}} </h1>
+        <p><strong>Price:</strong> {{product.price | currency}}</p>
+        <p><strong>Description:</strong>{{product.description}}</p>
     </div>
-    <button (click)='createProduct()'>create</button>
+    <!-- <button (click)='createProduct()'>create</button>
     <button (click)='updateProduct()'>update</button>
-    <button (click)='deleteProduct()'>delete</button>
+    <button (click)='deleteProduct()'>delete</button> -->
+    </mat-card>
 </div>
