@@ -13,10 +13,14 @@
           <li><a routerLink="/demo" routerLinkActive="active">Demo</a></li> -->
         </ul>
       </nav>
-      <span class="example-spacer"></span>
-      <a routerLink='/order' mat-raised-button [matBadge]="total$ | async" matBadgePosition="after" matBadgeColor="accent">
-        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">shopping_cart</mat-icon>
-      </a>
+      <!-- <span class="example-spacer"></span> -->
+      <div>
+        <a mat-button routerLink="/admin/login" class="button-login" >Login</a>
+        <a routerLink='/order' mat-raised-button [matBadge]="total$ | async" matBadgePosition="after" matBadgeColor="accent">
+          <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">shopping_cart</mat-icon>
+        </a>
+      </div>
+
     </div>
   </mat-toolbar-row>
 </mat-toolbar>
