@@ -26,14 +26,29 @@ img{
     justify-items: center;
     display: grid;
 }
-  .area2 { grid-area: area2;
-    justify-items: center;
-    display: grid; }
+.area1 img, .area2 img{
+    transition: 1s ease;
+}
+    
+.area1 img:hover, .area2 img:hover{
+-webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+transition: 1s ease;
+}
 
-    h1 {
-        margin: 1rem;
-        text-align: center;
-        margin-top: 9rem;
-        font-size: 3rem;
-        font-style: oblique;
-    }
+.area2 { grid-area: area2;
+justify-items: center;
+display: grid; }
+
+h1 {
+    margin: 1rem;
+    text-align: center;
+    margin-top: 9rem;
+    font-size: 3rem;
+    font-style: oblique;
+}
+.texto{
+    text-shadow: 2px 2px 4px #000000;
+}
+
