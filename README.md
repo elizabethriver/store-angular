@@ -1,27 +1,20 @@
 # StoreAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
+This is a e-commerce where an admin user can create, edit, and delete products. 
 
-## Development server
+![Diseño sin título](https://user-images.githubusercontent.com/63525613/111919470-2821f000-8a58-11eb-816d-28c8a197ab0b.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Technologies used:
+ - @angular/animations": "~11.2.1",
+ - @angular/cdk": "^11.2.1",
+ - "@angular/common": "~11.2.1",+- 
+ - "@angular/compiler": "~11.2.1",
+ - "@angular/core": "~11.2.1",
+ - "@angular/fire": "^6.1.4",
+ - "@angular/forms": "~11.2.1",
+ - "@angular/material": "^11.2.1",
+ - "@angular/router": "~11.2.1",
+ - "firebase": "^7.0 || ^8.0",
+ - "flexboxgrid": "^6.3.1",
+ - "rxjs": "~6.6.0",
+ - scss 
