@@ -3,3 +3,22 @@
     flex-direction: column;
     align-items: flex-start;
   }
+  mat-card{
+    background-color: #edeeee;
+    position: relative;
+    margin: 2rem;
+    width: min-content;
+  }
+  mat-form-field {
+    display: grid;
+    position: relative;
+    text-align: left;
+  }
+  input[type="file" i]{
+    background-color: black;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  img{
+    width: 40%;
+  }

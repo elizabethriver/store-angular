@@ -1,5 +1,6 @@
 .sidenav-container {
   height: 100%;
+ 
 }
 
 .sidenav {
@@ -20,6 +21,15 @@
   background-color: bisque;
 }
 
-// .bg-color-whatever{
-//   background-color: yellow;
-// }
+mat-toolbar{
+  background-color:  #259086;
+  color: #fff
+}
+
+mat-sidenav{
+  background-color:  #259086;
+}
+
+mat-nav-list a {
+  color: #fff;
+}

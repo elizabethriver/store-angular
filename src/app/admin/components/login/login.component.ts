@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
 
   private sigIn() {
     this.form = this.fb.group({
-      username: ['', [Validators.required]],
+      // username: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required]]
     });
@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
 
       this.authService.login(user.email, user.password)
       .then(() => {
-        this.router.navigate(['/admin']);
+        this.router.navigate(['/admin/products']);
       })
       .catch(() => alert('Email o password not valid'));
       // this.productsService.createProduct(product).subscribe((newProduct) => {

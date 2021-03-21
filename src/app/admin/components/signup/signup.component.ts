@@ -33,7 +33,7 @@ export class SignupComponent implements OnInit {
       console.log(user);
       this.authService.signup(user.email, user.password)
       .then(() => {
-        this.router.navigate(['/admin/login']);
+        this.router.navigate(['/admin/products']);
       });
       // this.productsService.createProduct(product).subscribe((newProduct) => {
       //   this.router.navigate(['/admin/products']);

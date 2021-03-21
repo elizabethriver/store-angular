@@ -1,4 +1,40 @@
+
+.container-table{
+position: relative;
+    margin: 1%;
+    padding: 1rem;
+ 
+}
+
 table {
-    width: 100%;
-    margin: 0;
-  }
+  width:100%;
+
+}
+
+.container-items{
+  position: relative;
+  margin: 1%;
+  padding: 1rem;
+}
+
+.container-items-buttom{
+  position: relative;
+  /* top: 50%; */
+  /* left: 50%; */
+  margin: 1rem;
+  padding: 1rem;
+}
+
+th.mat-header-cell, td.mat-cell, td.mat-footer-cell{
+  text-align: center;
+  font-size: 100%;
+}
+
+th.mat-header-cell{
+  background-color: #259086;
+  color: #fff;
+}
+a.mat-raised-button{
+  background-color: #259086;
+  color:#fff;
+}
