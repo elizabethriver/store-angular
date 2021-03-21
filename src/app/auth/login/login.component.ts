@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
       console.log(user);
       this.authService.login(user.email, user.password)
       .then(() => {
-        this.router.navigate(['/admin']);
+        this.router.navigate(['/admin/products']);
       })
       .catch(() => {
         alert('not valid');
