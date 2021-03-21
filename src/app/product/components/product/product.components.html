@@ -8,8 +8,8 @@
         <img  mat-card-image [src]=product.image alt="product select">
     </figure>
     <mat-card-content>
-        <p>{{product.description | slice:0:10}}</p>
-        <p> {{today | date: 'hh: mm: a'}}</p>
+        <h3><strong>Description:</strong> {{product.description | slice:0:10}}</h3>
+        <h3><strong>Date:</strong> {{today | date: 'hh: mm: a'}}</h3>
     </mat-card-content>
     <mat-card-actions>
         <button mat-button (click)="addCart()" mat-raised-button>
