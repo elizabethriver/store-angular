@@ -4,16 +4,19 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
-    <mat-nav-list>
-      <!-- <a mat-list-item routerLink="/admin/create">Create product</a> -->
-          <!-- <a mat-list-item href="/admin/dashboard">Dashboard</a>
-      <a mat-list-item href="/admin/table">Table</a> -->
-      <!-- <a mat-list-item href="/admin/products">Products</a>  -->
-      <!-- <a mat-list-item href="/admin/login">Login</a> -->
-      <!-- <a mat-list-item href="/admin/signup">Signup</a> -->
-      <a mat-list-item routerLink="/">Home</a>
-      <button mat-button (click)="logout()" >Logout</button>
-      
+    <mat-nav-list class="header-row">
+      <div class="nav-a">
+        <!-- <a mat-list-item routerLink="/admin/create">Create product</a> -->
+            <!-- <a mat-list-item href="/admin/dashboard">Dashboard</a>
+        <a mat-list-item href="/admin/table">Table</a> -->
+        <a mat-list-item routerLink="/admin/products">List of Products</a> 
+        <!-- <a mat-list-item href="/admin/login">Login</a> -->
+        <!-- <a mat-list-item href="/admin/signup">Signup</a> -->
+        <a mat-list-item routerLink="/products">Catalog</a>
+      </div>
+      <div class="button-logout">
+        <button mat-button (click)="logout()" >Logout</button>
+      </div>   
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -26,7 +29,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>Platz-store</span>
+      <span>Platz-store Admin</span>
     </mat-toolbar>
     <router-outlet></router-outlet>
   </mat-sidenav-content>

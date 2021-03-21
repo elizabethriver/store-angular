@@ -1,3 +1,9 @@
+// :host {
+//   display: flex;
+//   flex-direction: column;
+//   align-items:center;
+// }
+
 .sidenav-container {
   height: 100%;
  
@@ -39,4 +45,16 @@ button.mat-button, .mat-icon-button, .mat-stroked-button {
   background: transparent;
   font-size: 16px;
   
+}
+
+.button-logout{
+  position: relative;
+  width: 100%;
+  align-items:center;
+}
+
+mat-nav-list.header-row{
+  display: flex;
+  flex-direction: column;
+
 }

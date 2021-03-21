@@ -1,0 +1,19 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+  }
+mat-card{
+  margin-top: 10%;
+  background-color: #edeeee;
+}
+a{
+  color: #ff4081;
+  text-decoration: none;
+}
+.link-signup{
+  position: relative;
+
+  margin-top: 1rem;
+
+}

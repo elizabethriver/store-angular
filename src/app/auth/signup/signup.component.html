@@ -1,7 +1,7 @@
 <mat-card>
     <form [formGroup]="form" (ngSubmit)="saveDates($event)">
         <mat-card-title>
-            <h1>SignUp</h1>
+            <h1>SignUp as Admin</h1>
         </mat-card-title>
         <mat-card-content>
             <mat-form-field appearance="fill">
@@ -19,3 +19,6 @@
         </mat-card-actions>
       </form>
 </mat-card>
+<div class="link-signup" >
+    <a routerLink="/auth/login">Already registered? Sign in as Admin</a>
+</div>
